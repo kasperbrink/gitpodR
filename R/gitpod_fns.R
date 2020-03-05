@@ -13,8 +13,12 @@ create_gp_dockerfile <- function(FROM, AS, rstudio){
   ldf <- length(dfile$Dockerfile)
   dfile$remove_cmd((ldf-1):ldf)
   dfile$add_after(
-    cmd = "RUN R -e remotes::install_cran('attempt')",
+    cmd = "RUN R -e 'remotes::install_cran(\"attempt\")'",
     after = 3
+  )
+  dfile$add_after(
+    cmd = "RUN R -e 'remotes::install_cran(\"remotes\")'",
+    after = 4
   )
   # if using a rstudio image open port 8787 and set password
   if(rstudio){
