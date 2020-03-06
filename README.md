@@ -6,7 +6,7 @@ Try it out here
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/kasperbrink/gitpodR)
 
-To learn more about gitpod visit [gitpod](https://www.gitpod.io). 
+To learn more about gitpod visit the [gitpod home page](https://www.gitpod.io). 
 
 Install from github:
 
